@@ -654,12 +654,16 @@ p.title, .site-navbar ul li a {
     background-color: #EED81D;
 }
 
+.react-bg {
+    background-color: #60DAFB;
+}
+
 .bootstrap-bg {
     background-color: #7A52B3;
 }
 
-.ionic-bg {
-    background-color: #4D8EF7;
+.scss-bg {
+    background-color: #CD669A;
 }
 
 .php-bg {
@@ -668,14 +672,6 @@ p.title, .site-navbar ul li a {
 
 .symfony-bg {
     background-color: #000000;
-}
-
-.java-bg {
-    background-color: #EA2B2C;
-}
-
-.node-bg {
-    background-color: #539E43;
 }
 
 .api-bg {
@@ -698,8 +694,8 @@ p.title, .site-navbar ul li a {
     background-color: #8D4DED;
 }
 
-.android-studio-bg {
-    background-color: #8EC155;
+.agile-bg {
+    background-color: #6CD2A2;
 }
 
 .trello-bg {
@@ -798,6 +794,32 @@ div .fab, div .fas, div .devicon {
     .api-column h5 {
         font-size: 19px !important;
     }
+
+    .square.agile-bg {
+        margin-right: 12px !important;
+    }
+
+    .agile-column h5 {
+        font-size: 19px !important;
+    }
+}
+
+@media screen and (max-width: 322px) {
+    .square.api-bg {
+        margin-right: 12px !important;
+    }
+
+    .api-column h5 {
+        font-size: 19px !important;
+    }
+
+    .square.agile-bg {
+        margin-right: 12px !important;
+    }
+
+    .agile-column h5 {
+        font-size: 19px !important;
+    }
 }
 
 
@@ -819,7 +841,7 @@ div .fab, div .fas, div .devicon {
         grid-row: 2;
     }
 
-    .js-column {
+    .scss-column {
         grid-column: 1;
         grid-row: 3;
     }
@@ -829,9 +851,14 @@ div .fab, div .fas, div .devicon {
         grid-row: 4;
     }
 
-    .ionic-column {
+    .js-column {
         grid-column: 1;
         grid-row: 5;
+    }
+
+    .react-column {
+        grid-column: 1;
+        grid-row: 6;
     }
 
 
@@ -846,19 +873,9 @@ div .fab, div .fas, div .devicon {
         grid-row: 2;
     }
 
-    .java-column {
-        grid-column: 1;
-        grid-row: 3;
-    }
-
-    .node-column {
-        grid-column: 1;
-        grid-row: 4;
-    }
-
     .api-column {
         grid-column: 1;
-        grid-row: 5;
+        grid-row: 3;
     }
 
 
@@ -885,7 +902,7 @@ div .fab, div .fas, div .devicon {
         grid-row: 3;
     }
 
-    .android-column {
+    .agile-column {
         grid-column: 1;
         grid-row: 4;
     }
@@ -912,7 +929,7 @@ div .fab, div .fas, div .devicon {
         grid-row: 1;
     }
 
-    .js-column {
+    .scss-column {
         grid-column: 1;
         grid-row: 2;
     }
@@ -922,8 +939,13 @@ div .fab, div .fas, div .devicon {
         grid-row: 2;
     }
 
-    .ionic-column {
+    .js-column {
         grid-column: 1;
+        grid-row: 3;
+    }
+
+    .react-column {
+        grid-column: 2;
         grid-row: 3;
     }
 
@@ -938,19 +960,9 @@ div .fab, div .fas, div .devicon {
         grid-row: 1;
     }
 
-    .java-column {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .node-column {
-        grid-column: 2;
-        grid-row: 2;
-    }
-
     .api-column {
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 2;
     }
 
     .api-column h5 {
@@ -981,17 +993,17 @@ div .fab, div .fas, div .devicon {
         grid-row: 2;
     }
 
-    .android-column {
+    .agile-column {
         grid-column: 2;
         grid-row: 2;
     }
 
-    .android-column h5 {
+    .agile-column h5 {
         font-size: 18px !important;
-        margin-top: 5px;
+        padding-top: 0 !important;
     }
 
-    .square.android-studio-bg {
+    .square.agile-bg {
         margin-right: 12px !important;
     }
 
@@ -1002,9 +1014,15 @@ div .fab, div .fas, div .devicon {
 }
 
 
-@media screen and (min-width: 538px) {
-    .square.android-studio-bg {
+@media screen and (min-width: 532px) {
+    .square.agile-bg {
         margin-right: 20px !important;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .agile-column h5 {
+        padding-top: 8px !important;
     }
 }
 
@@ -1013,11 +1031,11 @@ div .fab, div .fas, div .devicon {
         margin-right: 12px !important;
     }
 
-    .square.android-studio-bg {
+    .square.agile-bg {
         margin-right: 12px !important;
     }
 
-    .android-column h5 {
+    .agile-column h5 {
         font-size: 16px !important;
         margin-top: 5px;
     }
@@ -1030,22 +1048,22 @@ div .fab, div .fas, div .devicon {
 }
 
 @media screen and (min-width: 597px) {
-    .square.android-studio-bg {
-        margin-right: 17px !important;
+    .square.agile-bg {
+        margin-right: 20px !important;
     }
 
-    .android-column h5 {
-        font-size: 19px !important;
+    .agile-column h5 {
+        padding-top: 8px !important;
     }
 }
 
 @media screen and (min-width: 654px) {
-    .square.android-studio-bg {
+    .square.agile-bg {
         margin-right: 20px !important;
     }
 
-    .android-column h5 {
-        font-size: 22px !important;
+    .agile-column h5 {
+        font-size: 19px !important;
     }
 }
 
@@ -1066,7 +1084,7 @@ div .fab, div .fas, div .devicon {
         grid-row: 1;
     }
 
-    .js-column {
+    .scss-column {
         grid-column: 3;
         grid-row: 1;
     }
@@ -1076,8 +1094,13 @@ div .fab, div .fas, div .devicon {
         grid-row: 2;
     }
 
-    .ionic-column {
+    .js-column {
         grid-column: 2;
+        grid-row: 2;
+    }
+
+    .react-column {
+        grid-column: 3;
         grid-row: 2;
     }
 
@@ -1092,19 +1115,9 @@ div .fab, div .fas, div .devicon {
         grid-row: 1;
     }
 
-    .java-column {
+    .api-column {
         grid-column: 3;
         grid-row: 1;
-    }
-
-    .node-column {
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .api-column {
-        grid-column: 2;
-        grid-row: 2;
     }
 
 
@@ -1130,17 +1143,18 @@ div .fab, div .fas, div .devicon {
         grid-row: 1;
     }
 
-    .android-column {
+    .agile-column {
         grid-column: 1;
         grid-row: 2;
     }
 
-    .android-column h5 {
+    .agile-column h5 {
         font-size: 18px !important;
-        margin-top: 5px;
+        margin-top: 0px;
+        padding-top: 0 !important;
     }
 
-    .square.android-studio-bg {
+    .square.agile-bg {
         margin-right: 12px !important;
     }
 
@@ -1151,25 +1165,37 @@ div .fab, div .fas, div .devicon {
 }
 
 
-@media screen and (min-width: 870px) {
-    .square.android-studio-bg {
+@media screen and (min-width: 843px) {
+    .square.agile-bg {
         margin-right: 15px !important;
     }
 
-    .android-column h5 {
+    .agile-column h5 {
         font-size: 19px !important;
-        margin-top: 3px;
+        margin-top: 0px;
+    }
+}
+
+
+@media screen and (min-width: 877px) {
+    .square.agile-bg {
+        margin-right: 15px !important;
+    }
+
+    .agile-column h5 {
+        font-size: 19px !important;
+        margin-top: 10px;
     }
 }
 
 @media screen and (min-width: 940px) {
-    .square.android-studio-bg {
+    .square.agile-bg {
         margin-right: 20px !important;
     }
 
-    .android-column h5 {
-        font-size: 22px !important;
-        margin-top: 0;
+    .agile-column h5 {
+        font-size: 19px !important;
+        margin-top: 10px;
     }
 }
 
@@ -1190,7 +1216,7 @@ div .fab, div .fas, div .devicon {
         grid-row: 1;
     }
 
-    .js-column {
+    .scss-column {
         grid-column: 3;
         grid-row: 1;
     }
@@ -1200,8 +1226,13 @@ div .fab, div .fas, div .devicon {
         grid-row: 1;
     }
 
-    .ionic-column {
+    .js-column {
         grid-column: 1;
+        grid-row: 2;
+    }
+
+    .react-column {
+        grid-column: 2;
         grid-row: 2;
     }
 
@@ -1216,19 +1247,9 @@ div .fab, div .fas, div .devicon {
         grid-row: 1;
     }
 
-    .java-column {
+    .api-column {
         grid-column: 3;
         grid-row: 1;
-    }
-
-    .node-column {
-        grid-column: 4;
-        grid-row: 1;
-    }
-
-    .api-column {
-        grid-column: 1;
-        grid-row: 2;
     }
 
 
@@ -1254,18 +1275,18 @@ div .fab, div .fas, div .devicon {
         grid-row: 1;
     }
 
-    .android-column {
+    .agile-column {
         grid-column: 4;
         grid-row: 1;
     }
 
-    .square.android-studio-bg {
+    .square.agile-bg {
         margin-right: 15px !important;
     }
 
-    .android-column h5 {
+    .agile-column h5 {
         font-size: 18px !important;
-        margin-top: 3px;
+        margin-top: 0;
     }
 
     .trello-column {
@@ -1275,25 +1296,50 @@ div .fab, div .fas, div .devicon {
 }
 
 
-@media screen and (min-width: 1138px) {
-    .square.android-studio-bg {
+@media screen and (min-width: 1115px) {
+    .square.agile-bg {
         margin-right: 18px !important;
     }
 
-    .android-column h5 {
-        font-size: 20px !important;
-        margin-top: 3px;
+    .agile-column h5 {
+        font-size: 18px !important;
+        margin-top: 0;
     }
 }
 
-@media screen and (min-width: 1201px) {
-    .square.android-studio-bg {
-        margin-right: 20px !important;
+
+@media screen and (min-width: 1115px) {
+    .square.agile-bg {
+        margin-right: 18px !important;
     }
 
-    .android-column h5 {
-        font-size: 22px !important;
+    .agile-column h5 {
+        font-size: 19px !important;
         margin-top: 0;
+    }
+}
+
+
+@media screen and (min-width: 1159px) {
+    .square.agile-bg {
+        margin-right: 18px !important;
+    }
+
+    .agile-column h5 {
+        font-size: 19px !important;
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (min-width: 1201px) {
+    .square.agile-bg {
+        margin-right: 18px !important;
+    }
+
+    .agile-column h5 {
+        font-size: 19px !important;
+        margin-top: 10px;
     }
 }
 
@@ -1314,7 +1360,7 @@ div .fab, div .fas, div .devicon {
         grid-row: 1;
     }
 
-    .js-column {
+    .scss-column {
         grid-column: 3;
         grid-row: 1;
     }
@@ -1324,9 +1370,14 @@ div .fab, div .fas, div .devicon {
         grid-row: 1;
     }
 
-    .ionic-column {
+    .js-column {
         grid-column: 5;
         grid-row: 1;
+    }
+
+    .react-column {
+        grid-column: 1;
+        grid-row: 2;
     }
 
 
@@ -1340,18 +1391,8 @@ div .fab, div .fas, div .devicon {
         grid-row: 1;
     }
 
-    .java-column {
-        grid-column: 3;
-        grid-row: 1;
-    }
-
-    .node-column {
-        grid-column: 4;
-        grid-row: 1;
-    }
-
     .api-column {
-        grid-column: 5;
+        grid-column: 3;
         grid-row: 1;
     }
 
@@ -1378,14 +1419,35 @@ div .fab, div .fas, div .devicon {
         grid-row: 1;
     }
 
-    .android-column {
+    .agile-column {
         grid-column: 4;
         grid-row: 1;
+    }
+
+    .square.agile-bg {
+        margin-right: 18px !important;
+    }
+
+    .agile-column h5 {
+        font-size: 19px !important;
+        margin-top: 0;
     }
 
     .trello-column {
         grid-column: 5;
         grid-row: 1;
+    }
+}
+
+
+@media screen and (min-width: 1433px) {
+    .square.agile-bg {
+        margin-right: 18px !important;
+    }
+
+    .agile-column h5 {
+        font-size: 19px !important;
+        margin-top: 10px;
     }
 }
 
