@@ -1,0 +1,76 @@
+/* Gestion des balises */
+
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    
+    body {
+        margin: 0;
+        font-family: "Roboto", "Open Sans", sans-serif;
+        color: $dark-orange;
+        
+        h1 {
+            font-size: 50px;
+        }
+        
+        h2 {
+            font-size: 45px;
+        }
+        
+        h3 {
+            font-size: 30px;
+            color: $white;
+            background-color: $orange;
+            border-radius: 2px 30px 30px 30px;
+            box-shadow: 0 5px 10px $light-grey;
+            padding: 20px;
+            margin: 0 30px 30px 30px;
+            float: left;
+            position: absolute;
+            display: inline;
+            font-family: "Lora", "Open Sans", sans-serif;
+        }
+        
+        h4 {
+            font-size: 21px;
+            margin: 0;
+            font-family: "Lora", "Open Sans", sans-serif;
+        }
+        
+        h5 {
+            font-size: 18px;
+            margin: 0;
+        }
+        
+        h6 {
+            font-size: 16px;
+            margin: 0;
+        }
+        
+        p {
+            margin: 0;
+        }
+        
+        
+        h1, h2 {
+            margin: 0;
+            font-family: "Sofia", "Open Sans", sans-serif;
+        }
+        
+        .link, .link:link {
+            color: $dark-orange;
+            text-decoration: none;
+            background-position-y: -0%;
+            background-image: linear-gradient($white 50%, $orange 50%);
+            transition: all 500ms ease;
+            background-size: auto 175%;
+        }
+        
+        .link:hover {
+            color: $white;
+            background-position-y: 100%;
+            padding: 3px;
+        }
+    }
+}
+

@@ -1,0 +1,87 @@
+/* Parcours */
+#experience {
+    .container {
+        width: 100%;
+        padding-right: var(--bs-gutter-x,.75rem);
+        padding-left: var(--bs-gutter-y,.75rem);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: calc(var(--bs-gutter-y) * -1);
+        margin-right: calc(var(--bs-gutter-x) / -2);
+        margin-left: calc(var(--bs-gutter-x) / -2);
+
+        .col-lg-6 {
+            padding-left: 40px;
+        }
+    }
+
+    .parcours-title {
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: $grey;
+    }
+
+    .parcours-item {
+        padding: 0 0 20px 20px;
+        margin-top: -2px;
+        border-left: 2px solid $light-purple;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50px;
+            left: -9px;
+            top: 0;
+            background: $light-purple;
+            border: 2px solid $light-purple;
+        }
+
+        h5 {
+            line-height: 18px;
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $orange;
+            margin-bottom: 10px;
+
+            a {
+                line-height: 18px;
+                font-size: 16px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: $orange;
+                margin-bottom: 10px;
+                text-decoration: none;
+            }
+        }
+
+        h6 {
+            font-size: 16px;
+            background: $orange-lower-opacity;
+            padding: 5px 15px;
+            display: inline-block;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+
+            li {
+                padding-left: 10px;
+            }
+        }
+    }
+}

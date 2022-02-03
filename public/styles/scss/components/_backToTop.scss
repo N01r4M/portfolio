@@ -1,0 +1,46 @@
+/* Back to top */
+
+#backTop {
+    display: inline-block;
+    background-color: $orange-op-76;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+
+    &::after {
+        line-height: 50;
+        color: #FFFFFF;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: $orange;
+
+        i {
+            opacity: 1;
+        }
+    }
+
+    &:active {
+        background-color: $orange;
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    } 
+
+    i {
+        margin-top: 5px;
+        color: $white-op-76;
+        font-size: 2.5em;
+    }
+}

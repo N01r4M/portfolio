@@ -110,7 +110,7 @@ onscroll(document, navbarlinksActive)
 
 // Scroll down homepage
 document.querySelector('.arrows').addEventListener("click", () => {
-    document.querySelector("#presentation").scrollIntoView({behavior: "smooth"})
+    document.querySelector("#presentation").scrollIntoView({ behavior: "smooth" })
 })
 
 

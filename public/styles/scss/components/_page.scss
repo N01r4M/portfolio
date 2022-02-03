@@ -1,0 +1,24 @@
+/* Page */
+.container {
+    margin-top: 50px;
+}
+
+.category {
+    padding: 70px 50px;
+    
+    @media screen and (max-width: 550px){
+        padding: 70px 25px;
+    }
+    
+    @media screen and (max-width: 450px){
+        padding: 70px 10px;
+    }
+
+    &:nth-child(odd) {
+        background-color: $light-orange;
+    }
+
+    div {
+        margin-top: 100px;
+    }
+}
